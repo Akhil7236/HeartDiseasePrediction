@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+.bg1, .bg2,.bg3{
+    background-color: #ececec;
+    border-radius: 2rem;
+    margin: 1rem 0.7rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo img{
+  width: 8%;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left:3em;
+
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+.forwordSlash{
+    width: 0.1rem;
+    height: 1.1rem;
+    background-color: black;
+    transform: rotate(30deg);
+}
+.nav-links a:hover {
+    color: #4cd137;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.content,.support, .teamProfile{
+    padding:0 3rem;
+}
+.content h1{
+    font-size: 10.5vw;
+    font-weight: bold;
+}
+.section1,.section2{
+    display: flex;
+}
+.title{
+    flex-basis: 80%;
+}
+.btn{
+    flex-basis: 20%;
+    position: relative;
+}
+.btn button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding:0.5rem 1rem;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    background-color: blue;
+    border-color: #f9f9f9;
+}
+.btn button a{
+    text-decoration: none;
+    color: white;
+}
+.paragraph{
+    flex-basis: 50%;
+    position: relative;
+}
+.lines{
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    transform: translate(0%,-100%);
+}
+.lines p{
+    font-size: 1.7vw;
+}
+.picture{
+    flex-basis:50%;
+}
+.picture img{
+    width: 90%;
+}
+/*********************         Bg2          *********************/
+.supportHeading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.58vw;
+
+}
+.support{
+    padding-top: 2rem;
+}
+.docLists{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  
+}
+.doctor{
+  display: flex;
+  justify-content: center;
+  /* font-size: 2rem; */
+  color: black; 
+  gap: 5px;
+}
+.docImg{
+    width: 160%;
+}
+.docImg img{
+    width: 100%;
+}
+.docName h3{
+    font-size: 1.4vw;
+}
+.hospitalName h4,.docProfession p {
+    font-size: 1.2vw;
+}
+/***************         Bg3      ***************/
+.teamProfile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commonSpace{
+    margin: 1rem 0.5rem;
+    padding: 1em 3em;
+    border-radius: 10px;
+    box-shadow:2px 3px 8px -3px;
+}
+.commonDetailSpace{
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.commonTeamProfile{
+    width:100%;
+    border-radius: 50%;
+}
+/* @media (max-width:1150px){
+    .lines{
+        left: 10%;
+    }
+}
+@media (max-width:1035px){
+    .lines p {
+        font-size: 1.2rem;
+    }
+    .docImg {
+        width: 240%;
+    }
+} */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin: 20px;
+    }
+}
