@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3em;
+    padding: 1.7vw 3.6vw;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -68,7 +68,7 @@ nav {
     transition: all 0.3s ease;
 }
 .content,.support, .teamProfile{
-    padding:0 3rem;
+    padding:0 3.6vw;
 }
 .content h1{
     font-size: 10.5vw;
@@ -202,10 +202,15 @@ nav {
         display: block;
         cursor: pointer;
     }
+    
+}
+@media (max-width:500px){
+    .logo{
+        font-size: 6.4vw;
+    }
+    .btn button {
+        position: static; 
+        transform: translate(50%, 216%);
+    }
 }
 
-@media (max-width: 768px) {
-    .content {
-        margin: 20px;
-    }
-} 
