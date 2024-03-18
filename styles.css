@@ -195,9 +195,9 @@ nav {
 }
 
 @media (max-width: 630px) {
-    /* .nav-links {
-        visibility: hidden;
-    }  */
+    .picture img {
+        width: 113%;
+    }
     .logo img {
         width: 7%;
     }
@@ -220,9 +220,11 @@ nav {
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1000;
         transition: all 0.5s ease;
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius: 15px;
     }
     .marginInContent{
-        margin-top: 80px;
+        margin-top: 8em;
     }
     .nav-active li {
         padding-top: 0.3em;
@@ -235,21 +237,30 @@ nav {
     .nav-active a:hover {
         color: #4cd137;
     } 
-    /* .nav-active {
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-        transition: all 0.5s ease;
-    } */
+    .docLists {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .supportHeading {
+        font-size: 4vw;
+    }
+    .lines p {
+        font-size: 2.5vw;
+    }
+    .docName h3 {
+        font-size: 3.4vw;
+    }
+    .hospitalName h4, .docProfession p,.commonDetailSpace {
+        font-size: 2.5vw;
+    }
+    .lines {
+        left: 0%;
+        transform: translate(13%,-100%);
+    }
+    .teamProfile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media (max-width:500px){
     .logo{
@@ -257,7 +268,7 @@ nav {
     }
     .btn button {
         position: static; 
-        transform: translate(50%, 216%);
+        transform: translate(50%, 145%);
     }
 }
 
